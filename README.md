@@ -1,3 +1,5 @@
+# Aexa-Assessment-Task
+
 # RentalMatch — Graph-Powered Property Matching
 
 A rental property discovery app for the Nigerian market, backed by **CognoDB** (a managed, Neo4j-compatible graph database). Instead of just listing properties, RentalMatch lets users filter by preferences and — more interestingly — explore properties through their *relationships*: shared amenities, shared nearby landmarks, and multi-criteria matching.
@@ -218,4 +220,3 @@ All queries use the parameterised query API (`runQuery(cypher, params)`) via the
 
 - **Hosted demo**: `<add your hosted URL here>`
 
-# Aexa-Assessment-Task
