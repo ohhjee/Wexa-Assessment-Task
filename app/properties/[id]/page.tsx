@@ -23,10 +23,6 @@ interface Property {
   image?: string;
 }
 
-
-
-
-
 export default function PropertyDetailsPage() {
   const params = useParams();
   const id = params.id as string;
@@ -96,8 +92,8 @@ export default function PropertyDetailsPage() {
               </h1>
 
               <p className="mt-3 text-sm leading-6 text-gray-500">
-                The property you are looking for does not exist or may have
-                been removed.
+                The property you are looking for does not exist or may have been
+                removed.
               </p>
             </div>
           </div>
@@ -151,15 +147,11 @@ export default function PropertyDetailsPage() {
                 />
               ) : (
                 <div className="flex min-h-[500px] items-center justify-center bg-gradient-to-br from-green-50 via-white to-gray-100">
-                  <div className="text-center">
-                    <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-3xl bg-white text-5xl shadow-lg">
-                      🏠
-                    </div>
-
-                    <p className="mt-5 text-sm font-medium text-gray-400">
-                      Property image
-                    </p>
-                  </div>
+                  <img
+                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
+                    alt={property.name}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
                 </div>
               )}
             </div>
@@ -167,9 +159,7 @@ export default function PropertyDetailsPage() {
             <div className="space-y-6">
               {/* Price */}
               <div className="rounded-3xl border border-gray-200 bg-white p-6 shadow-xl shadow-gray-200/40">
-                <p className="text-sm font-medium text-gray-500">
-                  Yearly rent
-                </p>
+                <p className="text-sm font-medium text-gray-500">Yearly rent</p>
 
                 <div className="mt-2 flex items-end justify-between gap-4">
                   <h2 className="text-3xl font-bold text-gray-950">
@@ -277,8 +267,6 @@ export default function PropertyDetailsPage() {
                         key={`${place.name}-${index}`}
                         className="flex items-center gap-4 rounded-2xl border border-gray-100 bg-gray-50 p-4 transition hover:border-blue-100 hover:bg-blue-50/50"
                       >
-                       
-
                         <div className="min-w-0 flex-1">
                           <p className="truncate font-semibold text-gray-900">
                             {place.name}
@@ -351,9 +339,8 @@ export default function PropertyDetailsPage() {
             </h2>
 
             <p className="mt-4 max-w-3xl text-sm leading-7 text-gray-500">
-              This {property.type?.toLowerCase()} is located in{" "}
-              {property.area}. It offers {property.bedrooms} bedrooms and
-              includes{" "}
+              This {property.type?.toLowerCase()} is located in {property.area}.
+              It offers {property.bedrooms} bedrooms and includes{" "}
               {property.amenities.length > 0
                 ? property.amenities.join(", ")
                 : "standard property amenities"}
@@ -374,7 +361,7 @@ export default function PropertyDetailsPage() {
                       key={`${place.name}-summary-${index}`}
                       className="rounded-full bg-gray-100 px-3 py-2 text-xs font-medium text-gray-600"
                     >
-                      {(place.type)}: {place.name}
+                      {place.type}: {place.name}
                     </span>
                   ))}
                 </div>
