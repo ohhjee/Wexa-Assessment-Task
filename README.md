@@ -213,6 +213,14 @@ All queries use the parameterised query API (`runQuery(cypher, params)`) via the
 ## Screenshots
 
 > _Add screenshots of the landing page, `/properties` listing, property details, `/match`, similar properties, and recommendations pages here._
+## LANDING PAGE
+![Screenshot](./assets/images/landing.png)
+
+## PROPERTIES
+![Screenshot](./assets/images/properties.png)
+
+## PROPERTY DETAILS
+![Screenshot](./assets/images/view.png)
 
 ---
 
