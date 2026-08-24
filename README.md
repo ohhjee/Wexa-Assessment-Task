@@ -226,5 +226,5 @@ All queries use the parameterised query API (`runQuery(cypher, params)`) via the
 
 ## Demo
 
-- **Hosted demo**: `https://wexa-nine.vercel.app`
+- **Hosted demo**: [URL TO THE LIVE PROJECT](https://wexa-nine.vercel.app)
 
